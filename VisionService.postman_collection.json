@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "851d9163-8e19-4484-8c28-eb5de5f7e2f9",
+		"name": "VisionService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "guardar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo_documento",
+							"value": "CC",
+							"type": "text"
+						},
+						{
+							"key": "numero_documento",
+							"value": "1023956895",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "Camilo Andres Buitrago",
+							"type": "text"
+						},
+						{
+							"key": "edad",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "direccion",
+							"value": "Tv 14 # 40 31 s",
+							"type": "text"
+						},
+						{
+							"key": "cargo",
+							"value": "Asesor comercial",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/vision/guardar",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"vision",
+						"guardar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo_documento",
+							"value": "CC",
+							"type": "text"
+						},
+						{
+							"key": "numero_documento",
+							"value": "1023956895",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/vision/guardar",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"vision",
+						"guardar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "numero_documento",
+							"value": "1023956895",
+							"type": "text"
+						},
+						{
+							"key": "tipo_documento",
+							"value": "CC",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/vision",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"vision"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
